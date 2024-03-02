@@ -11,19 +11,19 @@ const Burger = ({ sliceSelected }) => {
         if (slice.slice_name === "Aloo Tikki") {
           for (let i = 0; i < slice.slice_quantity; i++) {
             setSliceString(
-              (prev) => prev + "<h1>-------------------------------</h1>"
+              (prev) => prev + "<h1>-------------------------------   Aloo Tikki</h1>"
             );
           }
         } else if (slice.slice_name === "Paneer") {
           for (let i = 0; i < slice.slice_quantity; i++) {
             setSliceString(
-              (prev) => prev + "<h2>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</h2>"
+              (prev) => prev + "<h2>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Paneer</h2>"
             );
           }
         } else if (slice.slice_name === "Cheese") {
           for (let i = 0; i < slice.slice_quantity; i++) {
             setSliceString(
-              (prev) => prev + "<h2>*******************************</h2>"
+              (prev) => prev + "<h2>*******************************  Cheese</h2>"
             );
           }
         }
@@ -33,9 +33,9 @@ const Burger = ({ sliceSelected }) => {
   console.log({ sliceString });
   return (
     <div className="Burger">
-      <h1>======================</h1>
+      <h1>======================   Bread</h1>
       <div dangerouslySetInnerHTML={{ __html: sliceString }} />
-      <h1>======================</h1>
+      <h1>======================   Bread</h1>
     </div>
   );
 };
