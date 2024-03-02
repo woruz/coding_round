@@ -116,7 +116,7 @@ const Order = () => {
         Total Amount:-{total_amount(sliceSelecetd, burgerCtr)}
       </div>
       <div>
-        <button onClick={orderHandler}>Order</button>
+        <button disabled={!phoneNumber || !sliceCtr || !burgerCtr || !sliceSelecetd} onClick={orderHandler}>Order</button>
       </div>
       {sliceSelecetd && sliceCtr && (
         <Burger sliceSelected={sliceSelecetd} sliceCtr={sliceCtr} />

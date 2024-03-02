@@ -11,7 +11,7 @@ const Burger = ({ sliceSelected }) => {
         if (slice.slice_name === "Aloo Tikki") {
           for (let i = 0; i < slice.slice_quantity; i++) {
             setSliceString(
-              (prev) => prev + "<h1>-------------------------------   Aloo Tikki</h1>"
+              (prev) => prev + "<h2>-------------------------------   Aloo Tikki</h2>"
             );
           }
         } else if (slice.slice_name === "Paneer") {
